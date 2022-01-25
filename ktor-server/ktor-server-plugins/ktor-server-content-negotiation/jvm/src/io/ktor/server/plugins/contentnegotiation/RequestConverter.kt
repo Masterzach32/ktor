@@ -11,7 +11,6 @@ import io.ktor.server.plugins.*
 import io.ktor.server.request.*
 import io.ktor.utils.io.*
 
-
 internal fun ApplicationPluginBuilder<ContentNegotiationConfig>.convertRequestBody(
 ) = onCallReceive { call, receive ->
     val registrations = pluginConfig.registrations
